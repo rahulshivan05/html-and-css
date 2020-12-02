@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neon Button Hover Effects</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;font-family: consolas;box-sizing: border-box;}
+		body{display: flex;justify-content: center;align-items: center;min-height: 100vh;flex-direction: center;background: #050801;}
+		a{position: relative;display: inline;padding: 25px 30px;margin: 40px 40px;color: #03e9f4;font-size: 24px;text-decoration: none;text-transform: uppercase;overflow: hidden;transition: 0.5s;letter-spacing: 4px;
+			-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);}
+			a:nth-child(1){filter: hue-rotate(290deg);}
+			a:nth-child(3){filter: hue-rotate(110deg);}
+		a:hover{background: #03e9f4;color: #050801;box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 200px #03e9f4;}
+		a span{position: absolute;display: block;}
+
+
+		a span:nth-child(1){top: 0;left: -100%;width: 100%;height: 2px;background: linear-gradient(90deg,transparent,#03e9f4);animation: animate1 1s linear infinite;}
+		@keyframes animate1
+		{
+			0%
+			{
+				left: -100%;
+			}
+			50%,100%
+			{
+				left: 100%;
+			}
+		}
+
+		a span:nth-child(2){top: -100%;right: 0;width: 2px;height: 100%;background: linear-gradient(180deg,transparent,#03e9f4);animation: animate2 1s linear infinite;animation-delay: 0.25s;}
+		@keyframes animate2
+		{
+			0%
+			{
+				top: -100%;
+			}
+			50%,100%
+			{
+				top: 100%;
+			}
+		}
+
+		a span:nth-child(3){bottom: 0;right: -100%;width: 100%;height: 2px;background: linear-gradient(270deg,transparent,#03e9f4);animation: animate3 1s linear infinite;animation-delay: 0.5s;}
+		@keyframes animate3
+		{
+			0%
+			{
+				right: -100%;
+			}
+			50%,100%
+			{
+				right: 100%;
+			}
+		}
+
+		a span:nth-child(4){bottom: -100%;left: 0;width: 2px;height: 100%;background: linear-gradient(360deg,transparent,#03e9f4);animation: animate4 1s linear infinite;animation-delay: 0.75s;}
+		@keyframes animate4
+		{
+			0%
+			{
+				bottom: -100%;
+			}
+			50%,100%
+			{
+				bottom: 100%;
+			}
+		}
+	</style>
+
+	<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88180321-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+</head>
+<body>
+	<!-- <a href="#">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		singh
+		
+	</a>
+
+
+	
+
+	<a href="#">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Neon Button
+	</a> -->
+
+	<a href="#www.youtube.com" target="">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Neon Button
+	</a>
+
+</body>
+</html>
