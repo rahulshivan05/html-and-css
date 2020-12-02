@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar Hover</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			/*background: #0b0b0b;*/
+		}
+		.container{
+			position: absolute;
+			top: 5%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+		li{
+			display: inline-block;
+		}
+		li a{
+			float: right;
+			text-decoration: none;
+			display: inline-block;
+			color: black;
+			font-family: Source Sans Pro;
+			font-weight: lighter;
+			font-size: 28px;
+			padding: 0 20px;
+		}
+		.cool-link::after{
+			content: '';
+			display: block;
+			width: 0;
+			height: 2px;
+			background: #48008a;
+			transition: width .3s;
+		}
+		.cool-link:hover::after{
+			width: 100%;
+			transition: width .3s;
+		}
+
+
+		/*         Search Box starts here          */
+		.search_box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 50%);
+			background-color: #2f3640;
+			height: 40px;
+			border-radius: 40px;
+			padding: 10px;
+		}
+		.input_box{
+			border: none;
+			outline: none;
+			background: none;
+			float: left;
+			padding: 0;
+			color: #fff;
+			font-size: 16px;
+			transition: 0.4s all;
+			line-height: 40px;
+			width: 0;
+		}
+		.btn{
+			color: #1abc9c;
+			float: right;
+			text-decoration: none;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 50%;
+		}
+		.search_box:hover .input_box{
+			width: 240px;
+			padding: 0 6px;
+		}
+		.search_box:hover .btn{
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<li><a href="#" class="cool-link">Home</a></li>
+		<li><a href="#" class="cool-link">About</a></li>
+		<li><a href="#" class="cool-link">Search</a></li>
+		<li><a href="#" class="cool-link">Contact Us</a></li>
+		<!-- <input type="text" class="input_box" name="" placeholder="Search...">
+		<a href="#" class="btn">
+			<img src="img/search.svg">
+		</a> -->
+	</div>
+	<div class="search_box">
+		<input type="text" class="input_box" name="" placeholder="Search...">
+		<a href="#" class="btn">
+			<img src="img/search.svg">
+		</a>
+	</div>
+
+</body>
+</html>

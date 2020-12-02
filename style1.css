@@ -1,0 +1,4 @@
+ul{display: flex;list-style: none;justify-content: center;}
+li a{text-decoration: none;margin: 10px;color: black;font-size: 20px;}
+li a:hover{color: red;transition: .3s all ease-out;}
+

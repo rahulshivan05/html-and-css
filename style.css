@@ -1,0 +1,26 @@
+header{
+	float: right;
+}
+
+ul{list-style: none;display: inline-flex;margin: 20px;}
+a{
+	text-decoration: none;
+	margin-right: 10px;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+}
+
+a:hover{color: green;background-color: yellow;}
+input{
+	color: blue;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+input:hover{
+	text-shadow: 2px 2px;
+}

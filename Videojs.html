@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<head>
+  <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <script src="https://cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/videojs-flash@2/dist/videojs-flash.min.js"></script>
+
+  <script type="text/javascript">
+  	var player = videojs('my-video');
+  	require(['video.js', 'videojs-flash'], function(videojs) {
+  var player = videojs('my-video');
+});
+  	videojs('my-video', {techOrder: ['flash', 'html5']});
+  </script>
+
+  <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
+
+  <!-- Video Quality CDN -->
+  <script src="quality-level-list.test.js"></script>
+
+  <!-- Optional Plugins -->
+
+
+  <!-- Video Quality -->
+ <!--  <script>
+  var options = {};
+ 
+var player = videojs('my-player', options, function onPlayerReady() {
+  videojs.log('Your player is ready!');
+ 
+  // In this context, `this` is the player that was created by Video.js.
+  this.play();
+ 
+  // How about an event listener?
+  this.on('ended', function() {
+    videojs.log('Awww...over so soon?!');
+  });
+});
+</script> -->
+
+</head>
+
+<body>
+  <video
+    id="my-video"
+    class="video-js vjs-theme-city vjs-big-play-centered"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup='{"language":"es"}'>
+  
+    <source src="D:\Movies\[TorrentCounter.to].Good.Newwz.2019.Hindi.720p.WEB-DL.x264.ESubs.[999MB].[MP4]\[TorrentCounter.to].Good.Newwz.2019.Hindi.720p.mp4" type="video/mp4" />
+    <source src="MY_VIDEO.webm" type="video/webm" />
+
+    <track kind="captions" src="http://example.com/path/to/captions.vtt" srclang="en" label="English" default>
+
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+
+  <script type="text/javascript">
+  	var player = videojs('my-video', {
+  		controls: 'true',
+  		loop: 'true',
+  		autoplay: 'false',
+  		userActions: {
+  			hotkeys: true
+  		},
+  		playbackRates: [0.25, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+  		responsive: true,
+  		liveui: true,
+  		breakpoints: {
+			tiny: 300,
+			xsmall: 400,
+		    small: 500,
+		    medium: 600,
+		    large: 700,
+		    xlarge: 800,
+		    huge: 900
+		},
+		fluid: 'true',
+		language: 'en',
+		nativeControlsForTouch: 'true',
+		nativeAudioTracks: 'true',
+		nativeTextTracks: 'true',
+		nativeVideoTracks: 'true',
+		preloadTextTracks: 'true',
+		fullscreen: 'enable',
+  	});
+
+  	
+  </script>
+
+</body>
+</html>
